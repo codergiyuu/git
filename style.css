@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.hide{
+    display: none;
+  
+}
+
+.showflex{
+    display: flex;
+}
+
+.show{
+    display: block;
+}
+
+.showMenu{
+    position: absolute;
+    right: 0;
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+    margin-inline: auto;
+    padding: 2rem;
+}
+
+header .menu-side{
+    display: none;
+}
+
+.login-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 20vh;
+
+}
+
+.login-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    border: 2px solid black;
+    padding: 5rem;
+    border-radius: 0.5rem;
+}
+
+.login-btn{
+    padding: 0.3rem;
+    border: none;
+    background-color: aqua;
+    border-radius: 0.5rem;
+}
+
+.sign-up{
+    color: chocolate;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.sign-up:hover{
+    color: #6e4930;
+}
+
+.error.active{
+    opacity: 1;
+    transform: scale(1);
+     visibility: visible;
+}
+
+.tryagain.active{
+    display: flex;
+}
+
+.error{
+   position: absolute;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+   opacity: 0;
+   transform: scale(0.5);
+   visibility: hidden;
+}
+
+.errorInner{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    padding: 2rem;
+    width: 50vh;
+    border-radius: 0.4rem;
+}
+
+.error h3{
+    width: 50%;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.tryagain{
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.4rem;
+}
+
+@media (max-width: 769px){
+    header .menu-side{
+        display: flex;
+    }
+
+    .menu-btn{
+    width: 4rem;
+    height: 2rem;
+    border: none;
+    background-color: aqua;
+    border-radius: 0.5rem;
+}
+
+
+
+.close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: aqua;
+    transition: 0.4s ease;
+}
+
+.close:hover{
+    transform: scale(1.1);
+}
+
+.menu ul{
+    position: absolute;
+    right: -245px;
+    top: 0;
+    background-color: bisque;
+    height: 100%;
+    transition: 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 2rem;
+    gap: 4rem;
+}
+}
+
